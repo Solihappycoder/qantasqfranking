@@ -17,10 +17,10 @@ Api_Token = "d8kZyyHKlNpF2XEgWQ2YZcuxcphdQ8"
 
 @client.event
 async def on_ready():
-    await tree.sync(guild=discord.Object(id=1241592466361024602))
+    await tree.sync(guild=discord.Object(id=570502783992594443))
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="over the Qantas QF Group"))
 
-@tree.command(name="rank",description="Ranks a user in the group.",guild=discord.Object(id=1241592466361024602))
+@tree.command(name="rank",description="Ranks a user in the group.",guild=discord.Object(id=570502783992594443))
 @app_commands.choices(desiredrank=[
     app_commands.Choice(name="Business", value=2),
     app_commands.Choice(name="FirstClass", value=3),
